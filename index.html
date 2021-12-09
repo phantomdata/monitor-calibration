@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <style>
+            body {
+                background-color: #cecece;
+            }
+            .black-container {
+                background-color: black;
+                min-height: 50%;
+                margin: 64px;
+                padding: 12px;
+            }
+            .black-container .black-widget {
+                background-color: #040404;
+                height:50%;
+            }
+            .white-container {
+                background-color: white;
+                min-height: 50%;
+                margin: 64px;
+                padding: 12px;
+            }
+            .white-container .white-widget {
+                background-color: rgb(250, 250, 250);
+                height: 50%;
+            }
+            .instructions {
+                background-color:palegoldenrod;
+                padding: 12px;
+            }
+            .sample-images {
+                background-color: black;
+                max-width: 100%;
+            }
+            .sample-images img {
+                margin: 25px;
+                max-width: 90%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Monitor Calibration</h1>
+        <h2>Black Calibration</h2>
+        <div class="black-container">
+            <div class="instructions">
+                <p>Set both brightness and contrast to 0.</p>
+                <p>Now increase brightness (black level) until you can just see the inner square below.</p>
+            </div>
+            <div class="black-widget"> </div>
+        </div>
+        <h2>White Calibration</h2>
+        <div class="white-container">
+            <div class="instructions">
+                <p>Set contrast (white level) to maximum</p>
+                <p>Decrease contrast until you can see the inner square below.</p>
+            </div>
+            <div class="instructions">
+                <p></p>
+            </div>
+            <div class="white-widget"></div>
+        </div>
+        <h2>Legom's Black Calibration</h2>
+        <div class="black-container">
+            <p class="instructions">
+                Remember that <strong>brightness</strong> controls the black level.
+            </p>
+            <img src="blacktest.png"/>
+        </div>
+        
+        <h2>Legom's White Calibration</h2>
+        <div class="white-container">
+            <p class="instructions">
+                Remember that <strong>contrast</strong> controls the white level.
+            </p>
+            <img src="whitetest.png"/>
+        </div>
+
+        <h2>Sample Images</h2>
+        <div class="sample-images">
+            <ul>
+                <li><img src="test-2.jpg"/></li>
+                <li><img src="test-3.jpg"/></li>
+                <li><img src="test-4.jpg"/></li>
+                <li><img src="test-5.jpg"/></li>
+                <li><img src="test-1.jpg"/></li>
+                <li><img src="test-6.jpg"/></li>
+                <li><img src="test-7.jpg"/></li>
+            </ul>
+        </div>
+    </body>
+</html>
